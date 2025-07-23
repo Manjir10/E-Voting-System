@@ -1,0 +1,33 @@
+.vote-container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .candidate-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .candidate-item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .vote-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .vote-message {
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  

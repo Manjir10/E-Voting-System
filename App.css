@@ -1,0 +1,170 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.status {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+select,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* Modal Animations */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+}
+
+.radio-group {
+  margin-top: 0.5rem;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
